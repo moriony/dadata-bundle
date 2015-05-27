@@ -1,0 +1,6 @@
+services:
+    dadata.client_factory:
+        class: Moriony\Dadata\Factory
+    dadata.client_manager:
+        class: DadataBundle\Service\ClientManagerService
+        arguments: [ @dadata.client_factory, %dadata% ]
