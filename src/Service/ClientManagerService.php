@@ -45,9 +45,9 @@ class ClientManagerService
 
     public function getGuzzleClient($name)
     {
-        if (!array_key_exists($name, $this->clients)) {
-            $this->clients[$name] = $this->factory->createGuzzleClient($this->getClientConfig($name));
+        if (!array_key_exists($name, $this->guzzleClients)) {
+            $this->guzzleClients[$name] = $this->factory->createGuzzleClient($this->getClientConfig($name));
         }
-        return $this->clients[$name];
+        return $this->guzzleClients[$name];
     }
 }
