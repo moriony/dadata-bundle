@@ -68,3 +68,7 @@ composer.json:
 
 ## Todo
 - automated testing
+
+## Links
+- [Dadata API Client](https://github.com/moriony/dadata-client)
+- [Dadata.ru API documantation](https://dadata.ru/api/)
