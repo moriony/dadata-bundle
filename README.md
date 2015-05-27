@@ -11,7 +11,7 @@ parameters:
     dadata.secret: *** secret ***
 ```
 
-Add bundle configuration to `/app/config.config.yml`
+Add bundle configuration to `/app/config/config.yml`
 
 ```yml
 dadata:
@@ -19,7 +19,7 @@ dadata:
         default:
             token: %dadata.token%
             secret: %dadata.secret%
-        second_client: # you can add multiply clients if you need
+        second_client: # You can add multiply clients if you need
             token: %dadata.token%
             secret: %dadata.secret%
 ```
@@ -35,6 +35,22 @@ Register bundle in `/app/AppKernel.php`
 ```
 
 Now dadata bundle is ready to use.
+
+## How to use
+
+```php
+class DefaultController extends Controller
+{
+    public function indexAction()
+    {
+        # ...
+        $manager = $this->container->get('dadata.client_manager');
+        $client = $manager->getClient('default');
+        $response = $client->cleanAddress("мск сухонска 11/-89");
+        # ...
+    }
+}
+```
 
 ## Installing
 
