@@ -2,17 +2,6 @@ Dadata Bundle for Symfony 2
 =====================
 Symfony 2 bundle for Dadata.ru [API client](https://github.com/moriony/dadata-client).
 
-
-
-
-
-
-
-
-Dadata.ru API Client
-==========
-[Dadata.ru](http://dadata.ru) API client based on Guzzle 5.
-
 Configuration
 ==========
 
