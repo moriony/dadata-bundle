@@ -1,9 +1,7 @@
-Dadata Bundle for Symfony 2
-=====================
+# Dadata Bundle for Symfony 2
 Symfony 2 bundle for Dadata.ru [API client](https://github.com/moriony/dadata-client).
 
-Configuration
-==========
+## Configuration
 
 First of all, add yours datada.ru credentials to `/app/config/parameters.yml`
 
@@ -38,8 +36,7 @@ Register bundle in `/app/AppKernel.php`
 
 Now dadata bundle is ready to use.
 
-Installing
-==========
+## Installing
 
 This project can be installed using Composer. Add the following to your
 composer.json:
@@ -53,6 +50,5 @@ composer.json:
 }
 ```
 
-Todo
-==========
+## Todo
 - automated testing
