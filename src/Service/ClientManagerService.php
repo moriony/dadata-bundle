@@ -2,6 +2,8 @@
 
 namespace Moriony\DadataBundle\Service;
 
+use GuzzleHttp\Command\Guzzle\GuzzleClient;
+use Moriony\Dadata\Client;
 use Moriony\Dadata\Factory;
 
 class ClientManagerService
@@ -35,6 +37,10 @@ class ClientManagerService
         return $config;
     }
 
+    /**
+     * @param string $name
+     * @return Client
+     */
     public function getClient($name)
     {
         if (!array_key_exists($name, $this->clients)) {
@@ -43,6 +49,10 @@ class ClientManagerService
         return $this->clients[$name];
     }
 
+    /**
+     * @param string $name
+     * @return GuzzleClient
+     */
     public function getGuzzleClient($name)
     {
         if (!array_key_exists($name, $this->guzzleClients)) {
