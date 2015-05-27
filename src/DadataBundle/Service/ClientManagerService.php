@@ -1,6 +1,6 @@
 <?php
 
-namespace DadataBundle\Service;
+namespace Moriony\DadataBundle\Service;
 
 use Moriony\Dadata\Factory;
 

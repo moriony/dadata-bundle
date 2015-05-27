@@ -1,6 +1,6 @@
 <?php
 
-namespace DadataBundle\DependencyInjection;
+namespace Moriony\DadataBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;

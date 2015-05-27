@@ -1,5 +1,5 @@
 <?php
-namespace DadataBundle\DependencyInjection;
+namespace Moriony\DadataBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

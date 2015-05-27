@@ -1,6 +1,6 @@
 <?php
 
-namespace Moriony\DadataBundle;
+namespace Moriony\Moriony\DadataBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
